@@ -1,0 +1,22 @@
+# machine-specific
+env.local.sh
+.libero/
+.uv-python/
+
+# job output
+logs/*
+!logs/.gitkeep
+*.out
+
+# large or regenerable
+checkpoints/
+wandb/
+data/
+.venv/
+results/
+
+__pycache__/
+*.pyc
+
+# notebook autosaves
+.ipynb_checkpoints/

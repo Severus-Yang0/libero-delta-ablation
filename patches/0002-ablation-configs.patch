@@ -1,0 +1,49 @@
+diff --git a/src/openpi/training/config.py b/src/openpi/training/config.py
+index 8b952ac..f77eb78 100644
+--- a/src/openpi/training/config.py
++++ b/src/openpi/training/config.py
+@@ -727,6 +727,44 @@ _CONFIGS = [
+         weight_loader=weight_loaders.CheckpointWeightLoader("gs://openpi-assets/checkpoints/pi0_fast_base/params"),
+         num_train_steps=30_000,
+     ),
++    # Ablations of pi0_fast_libero: the same config with the extra delta action transform and/or the
++    # normalization changed, so that the effect of each can be measured on LIBERO.
++    TrainConfig(
++        name="pi0_fast_libero_no_delta",
++        model=pi0_fast.Pi0FASTConfig(action_dim=7, action_horizon=10, max_token_len=180),
++        data=LeRobotLiberoDataConfig(
++            repo_id="physical-intelligence/libero",
++            base_config=DataConfig(prompt_from_task=True),
++            extra_delta_transform=False,
++            use_quantile_norm_override=False,
++        ),
++        weight_loader=weight_loaders.CheckpointWeightLoader("gs://openpi-assets/checkpoints/pi0_fast_base/params"),
++        num_train_steps=30_000,
++    ),
++    TrainConfig(
++        name="pi0_fast_libero_quantile",
++        model=pi0_fast.Pi0FASTConfig(action_dim=7, action_horizon=10, max_token_len=180),
++        data=LeRobotLiberoDataConfig(
++            repo_id="physical-intelligence/libero",
++            base_config=DataConfig(prompt_from_task=True),
++            extra_delta_transform=True,
++            use_quantile_norm_override=True,
++        ),
++        weight_loader=weight_loaders.CheckpointWeightLoader("gs://openpi-assets/checkpoints/pi0_fast_base/params"),
++        num_train_steps=30_000,
++    ),
++    TrainConfig(
++        name="pi0_fast_libero_no_delta_quantile",
++        model=pi0_fast.Pi0FASTConfig(action_dim=7, action_horizon=10, max_token_len=180),
++        data=LeRobotLiberoDataConfig(
++            repo_id="physical-intelligence/libero",
++            base_config=DataConfig(prompt_from_task=True),
++            extra_delta_transform=False,
++            use_quantile_norm_override=True,
++        ),
++        weight_loader=weight_loaders.CheckpointWeightLoader("gs://openpi-assets/checkpoints/pi0_fast_base/params"),
++        num_train_steps=30_000,
++    ),
+     TrainConfig(
+         name="pi0_fast_libero_low_mem_finetune",
+         # Here is an example of loading a pi0-FAST model for LoRA finetuning.
