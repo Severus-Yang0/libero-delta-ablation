@@ -1,0 +1,54 @@
+{
+  "config": "pi0_fast_libero_no_delta_quantile",
+  "checkpoint": "/nfs/roberts/scratch/pi_tkf6/by258/libero-delta-ablation/checkpoints/pi0_fast_libero_no_delta_quantile/s42/29999",
+  "suite": "libero_goal",
+  "trials_per_task": 50,
+  "seed": 7,
+  "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "openpi_diff_sha256": "f848fe8f7d057538b97309fcbb5bb6f146cfa231150c2f143a645b65e1e9a1c9",
+  "success_rate": 0.944,
+  "episodes": 500,
+  "complete": true,
+  "tasks": [
+    {
+      "task": "open the middle drawer of the cabinet",
+      "success_rate": 0.84
+    },
+    {
+      "task": "put the bowl on the stove",
+      "success_rate": 1.0
+    },
+    {
+      "task": "put the wine bottle on top of the cabinet",
+      "success_rate": 0.98
+    },
+    {
+      "task": "open the top drawer and put the bowl inside",
+      "success_rate": 0.84
+    },
+    {
+      "task": "put the bowl on top of the cabinet",
+      "success_rate": 1.0
+    },
+    {
+      "task": "push the plate to the front of the stove",
+      "success_rate": 0.98
+    },
+    {
+      "task": "put the cream cheese in the bowl",
+      "success_rate": 1.0
+    },
+    {
+      "task": "turn on the stove",
+      "success_rate": 1.0
+    },
+    {
+      "task": "put the bowl on the plate",
+      "success_rate": 1.0
+    },
+    {
+      "task": "put the wine bottle on the rack",
+      "success_rate": 0.8
+    }
+  ]
+}

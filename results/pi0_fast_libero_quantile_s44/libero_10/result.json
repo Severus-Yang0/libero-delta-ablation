@@ -1,0 +1,54 @@
+{
+  "config": "pi0_fast_libero_quantile",
+  "checkpoint": "/nfs/roberts/scratch/pi_tkf6/by258/libero-delta-ablation/checkpoints/pi0_fast_libero_quantile/s44/29999",
+  "suite": "libero_10",
+  "trials_per_task": 50,
+  "seed": 7,
+  "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "openpi_diff_sha256": "f848fe8f7d057538b97309fcbb5bb6f146cfa231150c2f143a645b65e1e9a1c9",
+  "success_rate": 0.756,
+  "episodes": 500,
+  "complete": true,
+  "tasks": [
+    {
+      "task": "put both the alphabet soup and the tomato sauce in the basket",
+      "success_rate": 0.74
+    },
+    {
+      "task": "put both the cream cheese box and the butter in the basket",
+      "success_rate": 0.9
+    },
+    {
+      "task": "turn on the stove and put the moka pot on it",
+      "success_rate": 0.76
+    },
+    {
+      "task": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "success_rate": 0.88
+    },
+    {
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "success_rate": 0.92
+    },
+    {
+      "task": "pick up the book and place it in the back compartment of the caddy",
+      "success_rate": 0.86
+    },
+    {
+      "task": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "success_rate": 0.74
+    },
+    {
+      "task": "put both the alphabet soup and the cream cheese box in the basket",
+      "success_rate": 0.84
+    },
+    {
+      "task": "put both moka pots on the stove",
+      "success_rate": 0.36
+    },
+    {
+      "task": "put the yellow and white mug in the microwave and close it",
+      "success_rate": 0.56
+    }
+  ]
+}

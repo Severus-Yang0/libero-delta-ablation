@@ -1,0 +1,54 @@
+{
+  "config": "pi0_fast_libero_no_delta",
+  "checkpoint": "/nfs/roberts/scratch/pi_tkf6/by258/libero-delta-ablation/checkpoints/pi0_fast_libero_no_delta/s42/29999",
+  "suite": "libero_spatial",
+  "trials_per_task": 50,
+  "seed": 7,
+  "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "openpi_diff_sha256": "f848fe8f7d057538b97309fcbb5bb6f146cfa231150c2f143a645b65e1e9a1c9",
+  "success_rate": 0.978,
+  "episodes": 500,
+  "complete": true,
+  "tasks": [
+    {
+      "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "success_rate": 1.0
+    },
+    {
+      "task": "pick up the black bowl next to the ramekin and place it on the plate",
+      "success_rate": 0.98
+    },
+    {
+      "task": "pick up the black bowl from table center and place it on the plate",
+      "success_rate": 1.0
+    },
+    {
+      "task": "pick up the black bowl on the cookie box and place it on the plate",
+      "success_rate": 0.98
+    },
+    {
+      "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "success_rate": 0.94
+    },
+    {
+      "task": "pick up the black bowl on the ramekin and place it on the plate",
+      "success_rate": 1.0
+    },
+    {
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "success_rate": 1.0
+    },
+    {
+      "task": "pick up the black bowl on the stove and place it on the plate",
+      "success_rate": 0.98
+    },
+    {
+      "task": "pick up the black bowl next to the plate and place it on the plate",
+      "success_rate": 0.96
+    },
+    {
+      "task": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "success_rate": 0.94
+    }
+  ]
+}

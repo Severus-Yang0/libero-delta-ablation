@@ -1,0 +1,54 @@
+{
+  "config": "pi0_fast_libero_no_delta",
+  "checkpoint": "/nfs/roberts/scratch/pi_tkf6/by258/libero-delta-ablation/checkpoints/pi0_fast_libero_no_delta/s44/29999",
+  "suite": "libero_object",
+  "trials_per_task": 50,
+  "seed": 7,
+  "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "openpi_diff_sha256": "f848fe8f7d057538b97309fcbb5bb6f146cfa231150c2f143a645b65e1e9a1c9",
+  "success_rate": 0.976,
+  "episodes": 500,
+  "complete": true,
+  "tasks": [
+    {
+      "task": "pick up the alphabet soup and place it in the basket",
+      "success_rate": 1.0
+    },
+    {
+      "task": "pick up the cream cheese and place it in the basket",
+      "success_rate": 0.98
+    },
+    {
+      "task": "pick up the salad dressing and place it in the basket",
+      "success_rate": 0.98
+    },
+    {
+      "task": "pick up the bbq sauce and place it in the basket",
+      "success_rate": 0.96
+    },
+    {
+      "task": "pick up the ketchup and place it in the basket",
+      "success_rate": 0.96
+    },
+    {
+      "task": "pick up the tomato sauce and place it in the basket",
+      "success_rate": 0.94
+    },
+    {
+      "task": "pick up the butter and place it in the basket",
+      "success_rate": 0.94
+    },
+    {
+      "task": "pick up the milk and place it in the basket",
+      "success_rate": 1.0
+    },
+    {
+      "task": "pick up the chocolate pudding and place it in the basket",
+      "success_rate": 1.0
+    },
+    {
+      "task": "pick up the orange juice and place it in the basket",
+      "success_rate": 1.0
+    }
+  ]
+}

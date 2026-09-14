@@ -13,7 +13,8 @@ checkpoints/
 wandb/
 data/
 .venv/
-results/
+results/**/videos/
+results/**/server.log
 
 __pycache__/
 *.pyc
